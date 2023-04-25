@@ -181,9 +181,33 @@
                                 <button type="button" class="btn btn-secondary" onclick="location.reload()">
                     Clear Cart
                   </button>
-                                <a class="btn btn-primary" onclick="openWhatsapp()">
-                    Order Now
-                  </a>
+                                 <button type="button" class="btn btn-secondary" onclick="location.reload()">
+                Clear Cart
+            </button>
+            <a class="btn btn-primary" onclick="confirmOrder()">
+                Order Now
+            </a>
+            
+            <div id="order-confirmation" style="display: none;">
+                <p>Thanks for ordering. Your order has been confirmed.</p>
+            </div>
+            
+            <script>
+            function confirmOrder() {
+                // Show the order confirmation message
+                document.getElementById("order-confirmation").style.display = "block";
+            }
+            </script>
+            
+            <style>
+            #order-confirmation {
+                background-color: lightgreen;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            </style>
+                                
+                        
                             </div>
                         </div>
                     </div>
